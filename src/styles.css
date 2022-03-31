@@ -81,6 +81,10 @@ button:hover {
   width: 14rem;
   border-radius: 2rem;
   padding: 10px;
+  transition: all 1s cubic-bezier(1, -0.53, 0.405, 1.425);
+}
+.card:hover {
+  transform: rotate(5deg);
 }
 .header {
   display: flex;
