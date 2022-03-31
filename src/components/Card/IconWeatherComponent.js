@@ -47,7 +47,7 @@ function IconWeatherComponent({ icon, height, width }) {
   return (
     <div>
       <img
-        src={`${window.location.origin}/weather-icons/${svg}`}
+        src={`${window.location.origin}/assets/weather-icons/${svg}`}
         width={width}
         height={height}
         alt="climate image"
