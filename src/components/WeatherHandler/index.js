@@ -32,6 +32,22 @@ export const WeatherHandler = ({ cityLatLong }) => {
       {payloadForTenDays.error ||
         (payloadForCurrentTime.error &&
           "There was error from openweathermap API, please retry later")}
+      {payloadForTenDays.loading ||
+        (payloadForCurrentTime.loading && (
+          <div className="item">
+            <div
+              className="card  backgroundLight"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontSize: "2.3rem",
+              }}
+            >
+              satellites moving..!
+            </div>
+          </div>
+        ))}
     </div>
   );
 };
