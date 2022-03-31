@@ -36,7 +36,7 @@ export const FooterContentItem = ({ content, idx }) => {
   return (
     <div
       key={content.name}
-      style={{ display: "flex", flexDirection: "column" }}
+      style={{ display: "flex", flexDirection: "column", marginRight: "5px" }}
     >
       <div>{idx === 0 ? "Now" : time}</div>
       <IconWeatherComponent icon={icon} height="35px" width="35px" />

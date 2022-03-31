@@ -11,9 +11,10 @@
 }
 .footer {
   display: flex;
-  gap: 10;
-  padding-left: 10px;
+  gap: 7px;
+  padding-left: 5px;
+  padding-right: 10px;
   justify-content: space-between;
   overflow: scroll;
-  margin-top: 10px;
+  padding-top: 40px;
 }
