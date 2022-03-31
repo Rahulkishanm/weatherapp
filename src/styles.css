@@ -81,10 +81,28 @@ button:hover {
   width: 14rem;
   border-radius: 2rem;
   padding: 10px;
-  transition: all 1s cubic-bezier(1, -0.53, 0.405, 1.425);
+  animation-name: dance;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 .card:hover {
-  transform: rotate(5deg);
+  animation-name: dance;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes dance {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .header {
   display: flex;
