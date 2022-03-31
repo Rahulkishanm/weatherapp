@@ -1,0 +1,19 @@
+.cardheader {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.innerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  gap: 10;
+  padding-left: 10px;
+  justify-content: space-between;
+  overflow: scroll;
+  margin-top: 10px;
+}
